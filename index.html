@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio, Desarrollo Web, Frontend">
+    <meta name="author" content="Lluís Saura Bellmunt">
+    <title>Developing</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="center">
+            <p class="logo"><a href="index.html">Developing.</a></p>
+            <nav class="nav">
+                <ul class="nav__links">
+                    <li class="nav__link"><a href="index.html">Inicio</a></li>
+                    <li class="nav__link"><a id="navLinks1" href="#presentacion">Sobre mi</a></li>
+                    <li class="nav__link"><a id="navLinks2" href="#mis-proyectos">Mis proyectos</a></li>
+                    <li class="nav__link"><a id="navLinks3" href="#contacto">Contáctame</a></li>
+
+                </ul>
+            </nav>
+
+            <span class="material-icons open">menu_open</span>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">¡Hey! Bienvenid@ a mi portfolio</h1>
+                <p class="hero__subtitle">Soy Lluís Saura, y el desarrollo web es una de mis grandes pasiones. Te invito a conocer <span>Developing</span>.</p>
+                <button href="#" class="hero__btn" id="hero-btn">¡Allá vamos!</button>
+            </div>
+        </div>
+
+        <div class="presentacion" id="presentacion">
+            <h2 class="title">Politólogo y desarrollador frontend</h2>
+            <p class="subtitle"><em>"En esta vida debemos ser versátiles, por eso uno no puede quedarse en su burbuja de comfort."</em></p>
+            <div class="presentacion__cuerpo">
+                <img src="imagen-yo-2.jpeg" alt="Una imagen de mi." class="presentacion__img">
+                <div class="presentacion__texto">
+                    <p class="presentacion__parrafo">¡Hola! Soy Lluís Saura Bellmunt, y pese a que estudio para convertirme en politólogo, una de mis verdaderas pasiones es crear páginas web, dando puertas abiertas a mi creatividad y a expresar el 110% de mi mismo.</p><br>
+                    <p class="presentacion__parrafo">Empecé en el mundo del desarrollo web hace varios años, probando con herramientas de diseño web. No fue hasta bien entrado el confinamiento por la pandemia en que decidí dejar de depender de plataformas externas y crear yo mismo mis propios sitios web. En ese momento fue cuando, de forma <strong>autodidacta</strong>, empecé a estudiar <span>HTML</span>, <span>CSS</span> y <span>JavaScript</span>.</p><br>
+                    <p class="presentacion__parrafo">Tras varios meses de pruebas, y muchísimas horas de programar y resolver cantidad de errores que se me presentaban por el camino, tomé la decisión de que, pese a seguir estudiando en la Universidad, quería que este fuera mi proyecto de vida y ayudar a todas aquellas personas que necesiten un lugar donde destacar en el mundo.</p><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacto" id="contacto">
+            <div class="contacto__content">
+                <div class="contacto__text">
+                    <h2 class="title">¿Quieres saber más?</h2>
+                    <p class="subtitle">Envíame un mensaje y me pondré en contacto contigo lo antes posibles.</p>
+                </div>
+                <form class="formulario" action="mailto:webdesignsaura@gmail.com" method="post">
+                    <label for="mail"></label>
+                    <input type="email" id="mail" name="correo_electronico" placeholder="Inserta tu email y me pondré en contacto contigo.">
+                    <button class="btn-form" id="btn-form">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="proyectos" id="mis-proyectos">
+            <h1 class="title">Mis proyectos</h1>
+            <p class="subtitle"><em>"La práctica hace al maestro, más allá de conocimientos reglados."</em></p>
+        </div>
+        <div class="proyectos__catalogo">
+            <div class="proyecto">
+                <a href="project-one.html" target="_blank"><img src="Proyecto-1.png" alt="" class="proyecto__img"></a>
+            </div>
+            <div class="proyecto">
+                <a href="project-two.html" target="_blank"><img src="Proyecto-2.png" alt="" class="proyecto__img"></a>
+            </div>
+            <div class="proyecto">
+                <a href="project-three.html" target="_blank"><img src="Proyecto-3.png" alt="" class="proyecto__img"></a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="copyright">
+            <p>&copy; Developing 2022</p>
+        </div>
+        <div class="sm-icons">
+            <a href="https://instagram.com/lluisrbl/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/lluisrbl" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="mailto:webdesignsaura@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+    <script src="header.js"></script>
+</body>
+</html>
