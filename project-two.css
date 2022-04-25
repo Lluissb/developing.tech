@@ -33,7 +33,7 @@ header {
 
 .nav {
     height: inherit;
-    display: flex !important;
+    display: flex;
     align-items: center;
     list-style: none;
 }
@@ -172,6 +172,11 @@ main {
     padding-left: 0;
 }
 
+@media (min-width: 786px) {
+    .nav {
+        display: flex !important;
+    }
+}
 @media (max-width: 785px) {
     .header__btns {
         display: none;
