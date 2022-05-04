@@ -1,0 +1,265 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 234, 203);
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-items {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: gray;
+    padding: 0 1.5em;
+}
+
+.nav-item:hover {
+    color: black;
+}
+
+.submenu {
+    display: none;
+    width: 400px;
+    height: fit-content;
+    background-color: white;
+    position: absolute;
+    top: 5em;
+    border-radius: 20px;
+}
+
+.submenu-items {
+    margin: 1.75em;
+    list-style: none;
+}
+
+.submenu-item {
+    color: gray;
+    font-size: 14px;
+    padding: 0.5em 0;
+}
+
+.bold {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(59, 53, 53);
+}
+
+.bold span {
+    padding-left: 0.5em;
+}
+
+.text {
+    padding-left: 2em;
+    padding-top: 0;
+}
+
+.sign-in {
+    border: none;
+    background-color: transparent;
+    margin-right: 1em;
+    color: gray;
+    cursor: pointer;
+}
+
+.sign-in:hover {
+    color: rgb(59, 53, 53);
+}
+
+.try-for-free {
+    border: 2px solid rgb(3, 66, 3);
+    background-color: rgb(3, 66, 3);
+    padding: 0.9em 1.75em;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.try-for-free:hover {
+    background-color: rgb(255, 234, 203);
+    color: rgb(3, 66, 3);
+}
+
+.menu-open, .menu-close {
+    display: none;
+}
+
+.hero {
+    height: 500px;
+    background-image: url(project2_Hero-Image.png);
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: 100%
+}
+
+.hero h1 {
+    padding-top: 0.5em;
+    font-size: 48px;
+    width: 60%;
+}
+
+.hero h1 span {
+    color: rgb(243, 210, 20);
+}
+
+.subtitle {
+    color: gray;
+    width: 60%;
+    margin: 0.75em 0 1.5em 0;
+}
+
+.hero button {
+    border: 2px solid rgb(3, 66, 3);
+    background-color: rgb(3, 66, 3);
+    padding: 1em 2em;
+    margin-bottom: 1.5em;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: rgb(255, 234, 203);
+    color: rgb(3, 66, 3);
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+}
+
+.ratings p {
+    color: gray;
+    padding-right: 1.5em;
+}
+
+.img1 {
+    padding-right: 0.75em;
+}
+
+.brands {
+    margin: 1em 0 4em 0;
+}
+
+.brands p {
+    text-align: center;
+    padding-bottom: 3em;
+    color: gray;
+}
+
+.brands__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.brands__list img {
+    width: 200px;
+    padding: 0 1.5em;
+}
+
+@media (min-width: 916px) {
+    .nav-menu {
+        display: flex !important;
+    }
+}
+
+@media (max-width: 915px) {
+    body {
+        width: 95%;
+    }
+    
+    .nav-menu {
+        background-color: white;
+        width: 95%;
+        height: fit-content;
+        z-index: 9;
+        position: absolute;
+        top: 2em;
+        left: 1.5em;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        margin: 2em 0;
+    }
+    
+    .nav-items li {
+        padding: 1em 0;
+    }
+
+    .nav-item {
+        text-transform: uppercase;
+    }
+    
+    .submenu {
+        display: none;
+        width: 400px;
+        height: fit-content;
+        background-color: white;
+        position: relative;
+        top: 0.5em;
+        border-radius: 20px;
+    }
+    
+    .sign-in, .try-for-free {
+        display: none;
+    }
+    
+    .menu-open, .menu-close {
+        display: block;
+        cursor: pointer;
+        width: 35px;
+    }
+
+    .menu-close {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
+
+    .hero {
+        height: fit-content;
+        background-image: none;
+    }
+    
+    .hero h1 {
+        width: 80%;
+    }
+
+    .subtitle {
+        color: gray;
+        width: 90%;
+        margin: 0.75em 0 1.5em 0;
+    }
+    
+    .ratings {
+        margin-top: 1em;
+        justify-content: center;
+        margin-bottom: 4em;
+    }
+}
