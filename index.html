@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio, Web Development, Frontend">
+    <meta name="author" content="Lluís Saura Bellmunt">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Developing</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">Developing.</a>
+        <div class="menu-nav">
+            <ul class="nav">
+                <li><span>01</span><a href="index.html" class="nav__link">Home</a></li>
+                <li><span>02</span><a href="#about-me" class="nav__link">About me</a></li>
+                <li><span>03</span><a href="#proyectos" class="nav__link">My projects</a></li>
+                <li><span>04</span><a href="#contact" class="nav__link">Let's talk</a></li>
+            </ul>
+        </div>
+        <span class="material-symbols-outlined">menu</span>
+    </header>
+    <main>
+        <section class="hero">
+            <p class="pretitle">Hey!</p>
+            <h1 class="title">Welcome to Developing</h1>
+            <p class="subtitle">In my portfolio I'll show everything that happens in my mind and all I show on the web.</p>
+            <div class="btns">
+                <a href="#proyectos"><button>My projects</button></a>
+            </div>
+        </section>
+        <section class="about-me" id="about-me">
+            <span>02</span>
+            <h2 class="about-me__title">About Me</h2>
+            <div class="about-me__body">
+                <img src="imagen-yo.jpeg" alt="Una imagen de mi." class="about-me__img">
+                <div class="about-me__text">
+                    <p class="about-me__pg">Hey! I'm Lluís Saura. I'm studying a Bachelor Degree in Political Sciences in the University of Valencia, Spain. However, my true passion is the web, so coding amazing websites and showing all I can do is my life's path career.</p><br>
+                    <p class="about-me__pg">I started developing a few years ago. Back then, I used pre-designed platforms such as Wix or Weebly. Although I liked it that way, I figured out I wanted to express myself at a thousand per cent, so I decided to try coding by myself. In that moment, I decided to <strong>self-teach</strong> myself, starting with <span>HTML</span>, <span>CSS</span> and <span>JavaScript</span>. Later on, when I had a basic knowledge, I started with <span>jQuery</span>, <span>SCSS</span>, and others.</p><br>
+                    <p class="about-me__pg">After a few months of learning, debugging, coding, and getting to know this world, I made the decision to become a Front-End Web Developer.</p><br>
+                </div>
+        </section>
+        <section class="projects" id="projects">
+            <span>03</span>
+            <h2 class="projects__title">My projects</h2>
+            <div class="projects__catalogue">
+                <div class="project" id="project1">
+                    <img src="Project1.png" alt="">
+                    <div class="project__text" id="text1">
+                        <p>Created with HTML, CSS and JavaScript</p>
+                        <a href="project1.html" target="_blank"><button>Take a look</button></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="Project2.png" alt="" id="project2">
+                    <div class="project__text" id="text2">
+                        <p>Created with HTML, CSS and jQuery</p>
+                        <a href="project2.html" target="_blank"><button>Take a look</button></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="Project3.png" alt="" id="project3">
+                    <div class="project__text" id="text3">
+                        <p>Created with HTML, CSS and jQuery</p>
+                        <a href="project3.html" target="_blank"><button>Take a look</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <span>04</span>
+            <h2>Let's talk</h2>
+            <p>Contact with me in whatever platform you choose, I will reply as soon as I can! &#128540</p>
+            <div class="sm-icons">
+                <a href="https://www.instagram.com/lluisrbl/"><i class="fa fa-instagram"> <span>Instagram</span></i></a>
+                <a href="https://twitter.com/lluisrbl"><i class="fa fa-twitter"> <span>Twitter</span></i></a>
+                <a href="https://github.com/Lluissb"><i class="fa fa-github"> <span>Github</span></i></a>
+                <a href="mailto:sauralluis@gmail.com"><i class="fa fa-envelope"> <span>E-mail</span></i></a>
+            </div>
+            <img src="Mi-Avatar.png" alt="Mi avatar">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Developing 2022</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
